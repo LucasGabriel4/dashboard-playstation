@@ -1,0 +1,729 @@
+
+body{
+   
+   
+    background-color: var(--body-bg);
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+:root{
+     --blue--: #0D81EC;
+     --white--: white;
+     --body-bg: #191B1F;
+     --gray--:#60616d;
+     --gray-dark: #232428;
+     --light-gray: #21232B;
+     --light-gray_2: #2C2F3A;
+     --light-gray_3: #2D2F3A;
+     --orange--: #FA5353;
+}
+
+.container{
+    width: 100%;
+     padding: 0 2%;
+     margin: 0 auto;
+     max-width: 900px
+
+
+}
+
+
+
+/* HEADER */
+
+
+.header{
+   
+    padding: 25px 2%;
+}
+
+.header__flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.header__container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header__input-search{
+    /* padding-left: 10%; */
+}
+.header__input-search input{
+    width: 350px;
+    height: 45px;
+    border-radius: 20px;
+    border: 0;
+    font-weight: 700;
+    background-color: var(--gray-dark);
+    padding-left: 20px;
+    color:var(--gray--);
+   
+    
+}
+
+
+.header__input-search input::placeholder{
+    background-image: url('../img/icones/Vector.svg');
+    background-size: contain; 
+    background-repeat: no-repeat;
+    padding-left: 23px;
+   
+    
+}
+
+
+
+.header__icons-link ul{
+    display: flex;
+    
+    
+}
+
+li.header__container-icon{
+    background-color: var(--gray-dark);
+    padding: 22px 24px;
+    border-radius: 30px;
+}
+
+li.header__logo-profile{
+   padding: 30px 30px;
+   background-image: url('../img/logo_profile.png');
+   background-size: 90px;
+   background-position: center;
+   border-radius: 45px;
+   
+}
+
+
+.header__icons-link a{
+    color:var(--white--);
+    
+}
+
+
+
+.header__icons-link li + li{
+  margin-left: 20px;
+  
+}
+
+
+
+.fa-cart-shopping{
+   color:var(--white--);
+}
+
+
+.btn__menu{
+    margin-left: 20px;
+  
+}
+
+ button.btn__menu{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+}
+
+
+.line{
+    width: 25px;
+    height: 2px;
+    background-color:var(--white--);
+    display: block;
+    margin: 6px auto;
+    transform-origin: center;
+    transition:0.2s ease-in-out;
+ 
+
+   
+}
+
+button.animar  .line:nth-child(1){
+    transform: translateY(6px) rotate(-45deg);
+}
+
+
+button.animar  .line:nth-child(3){
+    transform: translateY(-10px) rotate(45deg);
+}
+
+
+button.animar  .line:nth-child(2){
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+ul.menu__aside{
+    position: absolute;
+    top: 0;
+    left:0;
+    /* width: 100px;    */
+    height: 100vh;
+    background-color:var(--body-bg);
+    border-right: 1px solid var(--light-gray_3);
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+
+}
+
+li.logo__aside{
+    margin-top: 2rem;
+}
+
+
+
+
+ul.menu__aside li:nth-child(2){
+    margin-top: 125px;
+}
+
+li.menu__item{
+    margin-bottom: 35px;
+    
+}
+
+li.menu__item a{
+    transition: 0.3s;
+}
+
+li.menu__item a i{
+    color: white;
+ 
+}
+
+li.menu__item a:hover{
+    background-color: var(--blue--);
+    padding: 10px 13px;
+    border-radius:15px;
+}
+
+.hide{
+    width: 0;
+    transition: 0.3s;
+}
+
+
+.show{
+    width: 100px;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+/* MAIN */
+
+
+/* Section banner */
+
+.container__banner{
+   width: 100%;
+   max-width: 800px;
+   height: 300px;
+   background-color:var(--light-gray);
+   border-radius: 30px;
+   display: flex;
+   
+   
+   
+ 
+} 
+
+
+.container__content-banner{
+    padding: 60px 0 0 25px;
+    color: var(--white--);
+ 
+   
+}
+
+.container__content-banner span{
+    background-color: var(--orange--);
+    padding: 3px 5px;
+    border-radius: 7px;
+    font-size: 0.6rem;
+}
+
+.container__content-banner h1{
+    margin-top: 1.5rem;
+    font-weight: 400;
+    font-size: 1.8rem;
+    width: 350px;
+    line-height: 1.3;
+}
+
+.container__btn-price{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: var(--light-gray_2);
+    display: inline-block;
+    padding: 10px 7px;
+    border-radius: 18px;
+}
+
+
+.container__content-price > span{
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.container__content-price > button{
+    margin-left:3rem;
+    background-color: var(--blue--);
+    border: 0;
+    padding: 15px 20px;
+    color: var(--white--);
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+
+
+.container__banner-img{
+    background-image: url('../img/miles_morales.png');
+    width: 400px;
+    height: 360px;
+    background-position: right;
+    z-index: 2;
+    background-size: cover;
+    position: relative;
+    bottom: 60px;
+   
+}
+
+
+
+
+
+
+/* Section most played */
+
+
+section.most__played{
+   padding: 30px 0 60px ;
+   
+}
+
+.most__played-title{
+    color: var(--white--);
+   
+}
+
+
+.most__played-flex{
+    display: flex;
+    margin-top: 1.5rem;
+    gap: 70px 35px;
+   
+}
+
+.most__played-single{
+   width: 100%; 
+   max-width: 245px;
+   height: 120px;
+  
+   
+}
+
+
+
+figure.img_1{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/ghost-of-tsushima.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+}
+
+figure.img_2{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/horizon-forbidden-west_7j3g.1200.webp');
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+}
+
+
+figure.img_3{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/resident\ evil\ 4\ ramake.png');
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+}
+
+
+
+figcaption h2{
+    color: var(--white--);
+    margin-top: 1rem;
+}
+
+
+figcaption span{
+    color: var(--gray--);
+    font-size: 13px;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+
+
+
+/* Section accessories_and-library */
+
+
+.accessories__and-library{
+padding: 30px 0;
+}
+
+
+.accessories__and-library-flex{
+    display: flex;
+  
+
+   
+}
+
+
+.accessories__container{
+    background-color: var(--light-gray);
+    width: 100%;
+    max-width: 245px;
+    height: 250px;
+    border-radius: 25px;
+    border-left: 1px solid var(--light-gray_3);
+    border-top: 1px solid var(--light-gray_3);
+    border-right: 1px solid var(--light-gray_3);
+
+}
+
+
+.accessories__container .accessories__title{
+    color: var(--white--);
+    padding: 30px 0 0 30px;
+}
+
+
+.accessories__container .accessories__title::after{
+    content: "🡢";
+    margin-left: 4.5rem;
+    color: var(--gray--)
+}
+
+
+
+
+.accessories__img{
+    width: 150px;
+    height: 150px;
+    background-image: url('../img/pulse_3d.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top:20px;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+
+
+
+
+
+
+.library__container{
+    width: 100%;
+    max-width: 530px;
+    height: 250px;
+    background-color: var(--light-gray);
+    margin-left: 2rem;
+    border-left: 1px solid var(--light-gray_3);
+    border-top: 1px solid var(--light-gray_3);
+    border-right: 1px solid var(--light-gray_3);
+    border-radius: 25px;
+}
+
+.library__container{
+    color: var(--white--);
+    padding: 30px 0 0 30px;
+}
+
+.library__container .library__title::after{
+    content: "🡢";
+    margin-left: 24rem;
+    color: var(--gray--)
+}
+
+
+.library__container-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.library__container-img{
+    display: flex;
+    align-items: center;
+}
+
+.library__img{
+    width: 45px;
+    height: 45px;
+    background-color: #ccc;
+    border-radius: 10px;
+    margin-top: 15px;
+    background-image: url('../img/cyberpunk-2077.jpg');
+    background-size: cover; 
+ 
+}
+
+.library__container-flex:nth-of-type(2) .library__img{
+    background-image: url('../img/demon\ souls.webp');
+    background-size: cover; 
+}
+
+.library__container-flex:nth-of-type(3) .library__img{
+    background-image: url('../img/overwatch-2-.jpg');
+    background-size: cover; 
+}
+
+
+
+
+.library__content-img{
+    margin: 15px 0 0 15px;
+}
+
+.library__content-img  h2{
+    font-size: 0.7rem;
+    
+}
+
+.library__content-img span{
+     font-size: 0.6rem;
+     color: var(--gray--)
+}
+
+.library__date{
+    margin-top: 15px;
+}
+
+.library__date h2{
+    font-size: 0.7rem;
+}
+
+.library__date span{
+    font-size: 0.6rem;
+    color: var(--gray--)
+}
+
+.date__2{
+    position: relative;
+    left: -15px;
+}
+
+.library__btn{
+   margin-right: 25px;
+    
+}
+
+.library__btn button{
+    color:var(--blue--);
+    background-color: transparent;
+    border: 1px solid var(--blue--);
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.library__container-flex:nth-of-type(2) .library__btn button{
+    color:var(--gray--);
+    background-color: transparent;
+    border: 1px solid var(--gray--);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 990px){
+
+/* 
+     .container{
+        max-width: 800px;
+
+     } */
+
+
+
+
+
+
+}
+
+
+
+@media screen and (max-width: 700px){
+ 
+
+     .container__banner-img{
+ 
+        display: none;
+       
+    }
+
+    .accessories__and-library-flex{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .accessories__container{
+        background-color: var(--light-gray);
+        width: 100%;
+        max-width: 530px;
+        height: 250px;
+    
+    
+    }
+
+    .library__container{
+        margin: 25px 0 0 0;
+    }
+    
+}
+
+
+@media screen and (max-width: 768px){
+    
+     
+     .container__content-banner{
+        padding: 60px 0 0 25px;
+   
+     }
+
+     .container__banner-img{
+        width: 400px;
+        height: 350px;
+        background-position: right;
+        z-index: 2;
+        background-size: cover;
+        position: relative;
+        bottom: 20px;
+       
+    }
+    
+    
+
+
+
+
+     .header__icons-link  .links {
+      display: none;
+        
+    } 
+
+    .btn__menu{
+        margin-left:0;
+      
+    }
+
+    .most__played-flex{
+        display: flex;
+        margin-top: 3rem;
+        flex-wrap: wrap;
+        justify-content: center;
+       
+    }
+
+    figcaption{
+        text-align: center;
+    }
+
+    .most__played-single{
+        width: 100%; 
+        max-width:190px;
+        height:100px;
+       
+        
+     }
+
+     .most__played-title{
+       text-align: center;
+    }
+    
+
+     .header__input-search input{
+      display: none;
+        
+    }
+
+    .accessories__container .accessories__title::after{
+       display: none;
+    }
+    
+    
+    .library__container .library__title::after{
+        display: none;
+     }
+     
+    
+}
+
+
+@media screen and (max-width: 683px){
+   
+        
+    .most__played-single{
+        width: 100%; 
+        max-width: 320px;
+        height: 170px;
+    
+        
+    }
+}
